@@ -1,5 +1,5 @@
-#ifndef  COMMAND4SET_HH
-#define  COMMAND4SET_HH
+#ifndef  COMMAND4PAUSE_HH
+#define  COMMAND4PAUSE_HH
 
 #ifndef __GNUG__
 //# pragma interface
@@ -20,26 +20,21 @@
  *
  *  Klasa modeluje ...
  */
-class Interp4Set: public Interp4Command {
+class Interp4Pause: public Interp4Command {
   /*
    * \brief Pola klasy pochodnej dla przypadku przypadku Move
    */
-   string _MobileObjName;
-   double _coorX;
-   double _coorY;
-   double _angOZ;
+
+   double _pauseTime;
 
 
  public:
   /*!
    * \brief
    */
-  Interp4Set()
+  Interp4Pause()
   {
-    this->_MobileObjName = "Example";
-    this->_coorX = 0;
-    this->_coorY = 0;
-    this->_angOZ = 0;
+    this->_pauseTime = 0;
   };
   /*!
    * \brief Wyświetla postać bieżącego polecenia (nazwę oraz wartości parametrów)
